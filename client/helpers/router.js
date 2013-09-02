@@ -1,3 +1,3 @@
-Router.add({
-  '/': 'itemsAdd'
+Meteor.Router.add({
+  '/': 'itemsPrep'
 });
