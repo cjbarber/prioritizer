@@ -27,5 +27,10 @@ Meteor.methods({
   },
   removeAllItems: function() {
     Items.remove({});
+  },
+  addItemComparedId: function(addToId, idToAdd) {
+    Items.update(addToId, {$addToSet: {
+      compared_to: idToAdd
+    }});
   }
 });

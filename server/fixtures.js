@@ -5,7 +5,9 @@ if (Items.find().count() === 0) {
       name: "Option " + i.toString(),
       random: Math.random(),
       points: 0,
-      times_compared: 0
+      times_compared: 0,
+      compared_to: [
+      ]
     });
   }
 };
